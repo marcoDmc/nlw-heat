@@ -35,14 +35,23 @@ const H1 = styled.p`
   width: 100%;
   color: white;
 `;
+const A = styled.a`
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+`;
 
 const TextBody = () => {
   return (
     <Div className="text">
       <H1>Marcos Damasceno</H1>
       <Span>
-        <IconGithub />
-        <P>@marcosDmc</P>
+        <A href="https://github.com/marcosDmc" target="_blank">
+          <IconGithub />
+          <P>@marcosDmc</P>
+        </A>
       </Span>
     </Div>
   );
