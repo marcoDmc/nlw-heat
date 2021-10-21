@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #e5e5e5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p {
+  color: #e1e1e6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  background: url(./background.svg);
+  max-width: 375px;
+  height: 812px;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  transform: translateY(10vh);
+}
+.bodyCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  align-items: center;
+  gap: 10px;
+}
+.textBody {
+  border: 2px solid red;
+  width: 50%;
+  height: 406px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.insignia {
+  position: absolute;
+  transform: translate(-2.8rem, -12.5rem);
+  z-index: 1;
+}
