@@ -1,10 +1,10 @@
 import TextBody from "./Body";
 import Div from "./Div";
 import "../../index.css";
-const Body = () => {
+const Body = ({ name, href, user }) => {
   return (
     <Div className="textBody">
-      <TextBody />
+      <TextBody name={name} href={href} user={user} />
     </Div>
   );
 };

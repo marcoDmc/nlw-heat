@@ -43,14 +43,14 @@ const A = styled.a`
   gap: 8px;
 `;
 
-const TextBody = () => {
+const TextBody = ({ name, href, user }) => {
   return (
     <Div className="text">
-      <H1>Marcos Damasceno</H1>
+      <H1>{name}</H1>
       <Span>
-        <A href="https://github.com/marcosDmc" target="_blank">
+        <A href={href} target="_blank">
           <IconGithub />
-          <P>@marcosDmc</P>
+          <P>{user}</P>
         </A>
       </Span>
     </Div>
