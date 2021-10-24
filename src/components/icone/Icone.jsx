@@ -1,9 +1,9 @@
 import Img from "./img";
 
-const Icon = () => {
+const Icon = ({avatar}) => {
   return (
     <>
-      <Img />
+      <Img avatar={avatar} />
     </>
   );
 };

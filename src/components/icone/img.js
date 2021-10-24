@@ -14,15 +14,15 @@ const Insignia = () => {
   return <Rocketseat />;
 };
 
-const Img = () => {
+const Img = ({avatar}) => {
   return (
     <>
       <span className="insignia">
         <Insignia />
       </span>
       <Photo
-        src="https://avatars.githubusercontent.com/u/84201745?v=4"
-        alt="photo user"
+        src={avatar}
+        alt="foto de usuario do github"
       ></Photo>
     </>
   );

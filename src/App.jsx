@@ -6,11 +6,11 @@ import "./index.css";
 import { useEffect, useState } from "react";
 function App() {
   const [user, setUser] = useState({});
-
+  const usuario = "marcosDmc";
   useEffect(() => {
     async function myDice() {
       try {
-        const { data } = await api.get("users/marcosDmc");
+        const { data } = await api.get(`users/${usuario}`);
         setUser(data);
       } catch (error) {
         console.error(error);
@@ -22,10 +22,10 @@ function App() {
   return (
     <div className="App">
       <div className="bodyCard">
-        <Icon />
+        <Icon avatar={user?.avatar_url} />
         <Body
           name={user?.name}
-          href={user?.avatar_url}
+          href={user?.html_url}
           user={`@${user?.login}`}
         />
         <p>{user?.bio}</p>
