@@ -8,9 +8,12 @@
 
 body {
   margin: 0;
-  background: #e5e5e5;
+  width:100vw;
+  min-height:812px;
+  height:100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   background: url(./background.svg) no-repeat center/cover;
 }
 p {
   color: #e1e1e6;
@@ -21,14 +24,13 @@ code {
     monospace;
 }
 .App {
-  background: url(./background.svg);
   max-width: 375px;
   height: 812px;
   margin: auto;
   display: grid;
   align-items: center;
   text-align: center;
-  transform: translateY(10vh);
+ 
 }
 .bodyCard {
   display: flex;
